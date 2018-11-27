@@ -24,3 +24,10 @@ Recursos de infraestrutura em nubvem devem sempre ser criados utilizando gerenci
 - Pode se utilizar tanto AWS quanto GCP (Google Cloud), não é preciso executar o teste em ambas, somente uma.
 - Todos os recursos devem ser criados utilizando os créditos gratuitos da AWS/GCP.
 - Não esquecer de destruir os recursos após criação e testes do desafio para não haver cobranças ou esgotamento dos créditos.
+
+
+## Executei este comando para enviar as variaveis para o Terraform e retornou o IP da instancia
+	terraform apply \ 
+  -var 'var_region=sa-east-1a' \
+  -var 'var_ips=200.111.22.11'
+  
